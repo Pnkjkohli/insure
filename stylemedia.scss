@@ -1,0 +1,206 @@
+@import "variable";
+
+@media (min-width: 320px) and (max-width: 575.98px) {
+
+    .desktop {
+        display: none;
+    }
+
+    .header {
+        justify-content: space-between;
+        gap: 0px;
+    }
+
+    .first_section_container {
+        overflow: visible;
+        &_rightpattern {
+            position: absolute;
+            right: 0px;
+            top: 48rem;
+            z-index: 1;
+            bottom: 0px;
+        }
+
+        &_block {
+            display: block;
+
+            &_content {
+                margin: 30rem 0rem 0rem 0rem;
+                align-items: center;
+                text-align: center;
+                padding: 35px 56px;
+
+                h1 {
+                    font-size: 2.3rem;
+                    color: #fafafa;
+                    line-height: 0.9;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+
+    .first_section_container_leftpattern {
+        position: absolute;
+        top: 32.7rem;
+    }
+
+    .first_section_container_block_img {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        left: 0px;
+        right: 0px;
+
+        img {
+            position: absolute;
+            top: 72px;
+            right: 0;
+            width: 100%;
+        }
+    }
+
+
+
+    .second_section_container {
+        padding: 0px;
+
+        &_title {
+            align-items: center;
+
+            h1 {
+                font-size: 3rem;
+                font-weight: 200;
+                text-align: center;
+            }
+        }
+
+        &_content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
+            &_card {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin: 25px;
+
+                p {
+                    line-height: 1.6;
+
+                }
+            }
+        }
+    }
+
+    .third_section_container {
+        margin: 20px;
+        padding: 0px;
+
+        &_block {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            //   padding: 40px 0px;
+            text-align: center;
+            gap: 30px;
+
+            &_title {
+                h1 {
+                    font-size: 2.3rem;
+                    color: #fafafa;
+                    line-height: 1.2;
+                    font-weight: 400;
+                }
+            }
+
+            &_button {
+                text-align: center;
+            }
+        }
+        &_bgImg{
+            position: absolute;
+            top: -17px;
+            right: 0px;
+        }
+    }
+
+    .footer {
+        background-image: url(images/bg-pattern-footer-mobile.svg);
+        background-repeat: no-repeat;
+        margin-top: 8rem;
+
+        &_block {
+            &_header {
+                // display: block;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                gap: 30px;
+
+                &_logo {
+                    text-align: center;
+                }
+            }
+
+            &_line {}
+
+            &_menu {
+                display: block;
+                text-align: center;
+
+            }
+        }
+    }
+}
+
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .desktop {
+        display: none;
+    }
+
+    .footer_block_menu {
+        display: flex
+    ;
+        flex-direction: row;
+        gap: 2rem;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width:991.98px) {
+    .mobile {
+        display: none;
+    }
+    .footer_block_menu {
+        display: flex
+    ;
+        flex-direction: row;
+        gap: 6rem;
+    }
+}
+
+@media (min-width: 992px) and (max-width:1199.98px) {
+
+    .mobile {
+        display: none;
+    }
+    .footer_block_menu {
+        display: flex
+    ;
+        flex-direction: row;
+        gap: 11rem;
+    }
+}
+
+@media (min-width:1200px) and (max-width:1440px) {
+    .mobile {
+        display: none;
+    }
+}

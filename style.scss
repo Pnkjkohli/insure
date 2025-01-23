@@ -231,6 +231,7 @@
 .footer{
     background-color: #fafcff;
     background-image: url(images/bg-pattern-footer-desktop.svg);
+    // background-image: url(images/bg-pattern-footer-mobile.svg);
     background-repeat: no-repeat;
   
     padding: 1px;
@@ -256,7 +257,7 @@
       }
      &_line{
         border: 1px solid #837d87;
-        width: 64rem;
+        // width: 64rem;
         margin: 30px 0px;
      }
      &_menu{
