@@ -1,0 +1,288 @@
+@import 'variable';
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Karla", serif;
+}
+
+%font_family_Karla {
+    font-family: "Karla", serif;
+}
+
+%font_family_Serif {
+    font-family: "DM Serif Display", serif;
+}
+
+
+
+@mixin linewidthMixin($borderColor) {
+    border: 1px solid $borderColor;
+    width: 8rem;
+  }
+
+
+.button_border {
+    border: 2px solid black;
+    padding: 5px 10px;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 17rem;
+    padding: 20px;
+    align-items: center;
+
+    &_menu {
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+        text-transform: uppercase;
+        align-items: center;
+        @extend %font_family_Karla;
+
+
+        &_link {
+            text-decoration: none;
+            color: $Dark_grayish_violet;
+            @extend %font_family_Karla;
+        }
+    }
+}
+
+.first_section_container {
+    background-color: $Dark_violet;
+    position: relative;
+    overflow: hidden;
+    padding: 50px 0px;
+
+    &_rightpattern {
+        position: absolute;
+        right: 0px;
+        top: -5rem;
+        z-index: 1;
+
+        img {
+            max-height: 575px;
+        }
+    }
+
+    &_leftpattern {
+        position: absolute;
+        top: 31.5rem;
+    }
+
+    &_block {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        align-items: center;
+
+        &_content {
+            display: flex;
+            flex-direction: column;
+            // padding: 0px 117px;
+            // margin: 122px;
+            margin: 80px 50px 122px 122px ;
+            justify-content: space-between;
+            gap: 34px;
+
+            &_line {
+                @include linewidthMixin(#ffffff);
+            }
+
+            h1 {
+                font-size: 3.5rem;
+                color: $Very_light_gray;
+                line-height: 0.9;
+                @extend %font_family_Serif;
+            }
+
+            p {
+                color: $Very_light_gray;
+                font-size: 13px;
+                line-height: 1.6;
+                @extend %font_family_Karla;
+            }
+
+            a {
+                text-transform: uppercase;
+                color: aliceblue;
+                text-decoration: none;
+                border: 2px solid #ffffff;
+                width: 140px;
+                padding: 6px 17px;
+            }
+        }
+
+        &_img {
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+
+            img {
+                position: absolute;
+                top: -30.5rem;
+                right: 8rem;
+            }
+        }
+    }
+}
+
+.second_section_container {
+    margin: 10rem 0rem 0rem 0rem;
+    padding: 2.5rem 7.7rem;
+
+    &_title {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+
+        &_line {
+            // border: 1px solid #95a9c6;
+            // width: 8rem;
+            @include linewidthMixin(#95a9c6);
+        }
+
+        h1 {
+            font-size: 3.7rem;
+            color: $Very_dark_violet;
+            line-height: 0.9;
+            @extend %font_family_Serif;
+        }
+    }
+
+    &_content {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin: 4rem 0rem;
+
+        &_card {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+
+            img {
+                height: 80px;
+                width: 80px;
+            }
+
+            h1 {
+                @extend %font_family_Serif;
+                font-weight: 400;
+            }
+
+            p {
+                color: $Dark_grayish_violet;
+            }
+        }
+    }
+
+}
+
+.third_section_container {
+    background-color: $Dark_violet;
+    margin: 50px 125px;
+    padding: 20px;
+    overflow: hidden;
+    position: relative;
+
+    &_block {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        padding: 50px;
+      &_title{
+        h1{
+            font-size: 3rem;
+            color: $Very_light_gray;
+            line-height: 0.9;
+            @extend %font_family_Serif;  
+        }
+      }
+        &_button{
+            text-align: center;
+            text-align: center;
+            display: flex;
+            flex-direction: row;
+            justify-content: end;
+            align-items: center;
+            a{
+                text-transform: uppercase;
+                color: aliceblue;
+                text-decoration: none;
+                border: 2px solid #ffffff;
+                padding: 6px 17px;
+            }
+        }
+    }
+    &_bgImg{
+        position: absolute;
+        top: 0px;
+        right: 0;
+    }
+
+
+
+}
+
+.footer{
+    background-color: #fafcff;
+    background-image: url(images/bg-pattern-footer-desktop.svg);
+    background-repeat: no-repeat;
+  
+    padding: 1px;
+    margin-top: 10rem;
+    &_block{
+
+        margin: 60px 125px;
+   
+  
+    
+    // padding: 20px;
+      &_header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        &_icons{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            gap: 15px;
+        }
+      }
+     &_line{
+        border: 1px solid #837d87;
+        width: 64rem;
+        margin: 30px 0px;
+     }
+     &_menu{
+        display: flex;
+        flex-direction: row;
+        gap: 14rem;
+        &_link{
+            &_header{
+                text-transform: uppercase;
+                color:$Dark_grayish_violet;
+                font-weight: 400;
+            }
+            &_menu{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                font-size: 12px;
+                text-transform: uppercase;
+                margin: 25px 0px;
+                a{
+                    text-decoration: none;
+                    color: $Very_dark_violet;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+}
+}
