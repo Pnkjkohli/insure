@@ -250,4 +250,12 @@
   .mobile {
     display: none;
   }
+  .header {
+    gap: 27rem;
+  }
+}
+@media (min-width: 1640px) and (max-width: 1800px) {
+  .header {
+    gap: 40rem;
+  }
 }/*# sourceMappingURL=stylemedia.css.map */
