@@ -26,7 +26,14 @@
 .button_border {
     border: 2px solid black;
     padding: 5px 10px;
+    &:hover{
+        background-color: $Very_dark_violet;
+        color: $Very_light_gray !important;;
+      
+    }
 }
+
+
 
 .header {
     display: flex;
@@ -49,6 +56,9 @@
             text-decoration: none;
             color: $Dark_grayish_violet;
             @extend %font_family_Karla;
+            &:hover{
+                color: $Very_dark_violet;
+            }
         }
     }
 }
@@ -114,6 +124,10 @@
                 border: 2px solid #ffffff;
                 width: 140px;
                 padding: 6px 17px;
+                &:hover{
+                    background-color:$Very_light_gray;
+                    color: $Very_dark_violet;
+                }
             }
         }
 
@@ -144,7 +158,7 @@
         &_line {
             // border: 1px solid #95a9c6;
             // width: 8rem;
-            @include linewidthMixin(#95a9c6);
+            @include linewidthMixin(#aa91bbab);
         }
 
         h1 {
@@ -202,19 +216,27 @@
             @extend %font_family_Serif;  
         }
       }
-        &_button{
-            text-align: center;
+     &_button{
             text-align: center;
             display: flex;
             flex-direction: row;
             justify-content: end;
             align-items: center;
+            z-index: 1 !important;
+          
             a{
                 text-transform: uppercase;
                 color: aliceblue;
                 text-decoration: none;
                 border: 2px solid #ffffff;
                 padding: 6px 17px;
+                // z-index: 1 !important;
+            &:hover{
+                background-color: $Very_light_gray;
+                color: $Very_dark_violet;
+              
+            }
+                
             }
         }
     }
@@ -222,6 +244,7 @@
         position: absolute;
         top: 0px;
         right: 0;
+        background: transparent;
     }
 
 
@@ -238,7 +261,7 @@
     margin-top: 10rem;
     &_block{
 
-        margin: 60px 125px;
+        margin: 60px 111px;
    
   
     
@@ -253,17 +276,28 @@
             flex-direction: row;
             justify-content: space-between;
             gap: 15px;
+            svg path {
+                width: 24px; 
+                height: auto;
+                transition: fill 0.3s ease; 
+        
+                &:hover {
+                        fill: $Very_dark_violet; 
+                    
+                }
+            }
+            
         }
       }
      &_line{
-        border: 1px solid #837d87;
+        border: 1px solid #837d873b;
         // width: 64rem;
         margin: 30px 0px;
      }
      &_menu{
         display: flex;
         flex-direction: row;
-        gap: 14rem;
+        gap: 12rem;
         &_link{
             &_header{
                 text-transform: uppercase;
@@ -281,6 +315,9 @@
                     text-decoration: none;
                     color: $Very_dark_violet;
                     font-weight: 400;
+                    &:hover{
+                        text-decoration: underline;
+                    }
                 }
             }
         }
