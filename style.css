@@ -17,6 +17,10 @@
   border: 2px solid black;
   padding: 5px 10px;
 }
+.button_border:hover {
+  background-color: #2b272f;
+  color: #fafafa !important;
+}
 
 .header {
   display: flex;
@@ -36,6 +40,9 @@
 .header_menu_link {
   text-decoration: none;
   color: #837d87;
+}
+.header_menu_link:hover {
+  color: #2b272f;
 }
 
 .first_section_container {
@@ -91,6 +98,10 @@
   width: 140px;
   padding: 6px 17px;
 }
+.first_section_container_block_content a:hover {
+  background-color: #fafafa;
+  color: #2b272f;
+}
 .first_section_container_block_img {
   position: relative;
   display: flex;
@@ -113,7 +124,7 @@
   gap: 40px;
 }
 .second_section_container_title_line {
-  border: 1px solid #95a9c6;
+  border: 1px solid rgba(170, 145, 187, 0.6705882353);
   width: 8rem;
 }
 .second_section_container_title h1 {
@@ -161,11 +172,11 @@
 }
 .third_section_container_block_button {
   text-align: center;
-  text-align: center;
   display: flex;
   flex-direction: row;
   justify-content: end;
   align-items: center;
+  z-index: 1 !important;
 }
 .third_section_container_block_button a {
   text-transform: uppercase;
@@ -174,10 +185,15 @@
   border: 2px solid #ffffff;
   padding: 6px 17px;
 }
+.third_section_container_block_button a:hover {
+  background-color: #fafafa;
+  color: #2b272f;
+}
 .third_section_container_bgImg {
   position: absolute;
   top: 0px;
   right: 0;
+  background: transparent;
 }
 
 .footer {
@@ -188,7 +204,7 @@
   margin-top: 10rem;
 }
 .footer_block {
-  margin: 60px 125px;
+  margin: 60px 111px;
 }
 .footer_block_header {
   display: flex;
@@ -201,14 +217,22 @@
   justify-content: space-between;
   gap: 15px;
 }
+.footer_block_header_icons svg path {
+  width: 24px;
+  height: auto;
+  transition: fill 0.3s ease;
+}
+.footer_block_header_icons svg path:hover {
+  fill: #2b272f;
+}
 .footer_block_line {
-  border: 1px solid #837d87;
+  border: 1px solid rgba(131, 125, 135, 0.231372549);
   margin: 30px 0px;
 }
 .footer_block_menu {
   display: flex;
   flex-direction: row;
-  gap: 14rem;
+  gap: 12rem;
 }
 .footer_block_menu_link_header {
   text-transform: uppercase;
@@ -227,4 +251,7 @@
   text-decoration: none;
   color: #2b272f;
   font-weight: 400;
+}
+.footer_block_menu_link_menu a:hover {
+  text-decoration: underline;
 }/*# sourceMappingURL=style.css.map */
