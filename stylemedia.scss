@@ -26,16 +26,19 @@
             display: block;
 
             &_content {
-                margin: 30rem 0rem 0rem 0rem;
+                margin: 29rem 0rem 0rem 0rem;
                 align-items: center;
                 text-align: center;
-                padding: 35px 56px;
+                padding: 35px 41px;
 
                 h1 {
-                    font-size: 2.3rem;
+                    font-size: 2.6rem;
                     color: #fafafa;
                     line-height: 0.9;
                     font-weight: 400;
+                }
+                p{
+                    font-size: 15px;
                 }
             }
         }
@@ -65,7 +68,7 @@
 
     .second_section_container {
         padding: 0px;
-
+        margin: 8rem 0rem 0rem 0rem;
         &_title {
             align-items: center;
 

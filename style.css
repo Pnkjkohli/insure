@@ -81,13 +81,14 @@
   width: 8rem;
 }
 .first_section_container_block_content h1 {
-  font-size: 3.5rem;
+  font-size: 4.51rem;
   color: #fafafa;
   line-height: 0.9;
+  font-weight: 400;
 }
 .first_section_container_block_content p {
   color: #fafafa;
-  font-size: 13px;
+  font-size: 15px;
   line-height: 1.6;
 }
 .first_section_container_block_content a {
@@ -97,6 +98,9 @@
   border: 2px solid #ffffff;
   width: 140px;
   padding: 6px 17px;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 1px;
 }
 .first_section_container_block_content a:hover {
   background-color: #fafafa;
@@ -115,22 +119,23 @@
 }
 
 .second_section_container {
-  margin: 10rem 0rem 0rem 0rem;
+  margin: 15rem 0rem 0rem 0rem;
   padding: 2.5rem 7.7rem;
 }
 .second_section_container_title {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 60px;
 }
 .second_section_container_title_line {
   border: 1px solid rgba(170, 145, 187, 0.6705882353);
   width: 8rem;
 }
 .second_section_container_title h1 {
-  font-size: 3.7rem;
+  font-size: 4.51rem;
   color: #2b272f;
   line-height: 0.9;
+  font-weight: 400;
 }
 .second_section_container_content {
   display: grid;
@@ -141,6 +146,8 @@
   display: flex;
   flex-direction: column;
   gap: 24px;
+  line-height: 1.6;
+  padding: 25px;
 }
 .second_section_container_content_card img {
   height: 80px;
@@ -166,9 +173,10 @@
   padding: 50px;
 }
 .third_section_container_block_title h1 {
-  font-size: 3rem;
+  font-size: 3.65rem;
   color: #fafafa;
   line-height: 0.9;
+  font-weight: 400;
 }
 .third_section_container_block_button {
   text-align: center;
@@ -183,7 +191,9 @@
   color: aliceblue;
   text-decoration: none;
   border: 2px solid #ffffff;
-  padding: 6px 17px;
+  padding: 11px 22px;
+  font-size: 15px;
+  font-weight: 400;
 }
 .third_section_container_block_button a:hover {
   background-color: #fafafa;
@@ -237,7 +247,8 @@
 .footer_block_menu_link_header {
   text-transform: uppercase;
   color: #837d87;
-  font-weight: 400;
+  letter-spacing: 1px;
+  font-size: 14px;
 }
 .footer_block_menu_link_menu {
   display: flex;
@@ -250,7 +261,9 @@
 .footer_block_menu_link_menu a {
   text-decoration: none;
   color: #2b272f;
-  font-weight: 400;
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-size: 14px;
 }
 .footer_block_menu_link_menu a:hover {
   text-decoration: underline;
